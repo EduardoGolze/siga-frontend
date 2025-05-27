@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $padding-md;
+  margin: $padding-lg auto;
+  max-width: 500px;
+
+  .status {
+    font-size: 1.5rem;
+    margin-bottom: $padding-md;
+    color: $dark-blue;
+  }
+
+  .tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $padding-sm;
+  }
+
+  .botaoReiniciar {
+    padding: $padding-sm $padding-md;
+    font-size: 1rem;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    @include hover-transition;
+
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+}

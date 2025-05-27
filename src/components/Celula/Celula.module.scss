@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.celula {
+  width: $cell-size;
+  height: $cell-size;
+  font-size: 3rem;
+  font-weight: bold;
+  border: 2px solid $navy-blue;
+  background-color: $light-gray;
+  cursor: pointer;
+  @include hover-transition;
+
+  &:hover {
+    background-color: $medium-gray;
+  }
+
+  &.X {
+    color: $red;
+  }
+
+  &.O {
+    color: $blue;
+  }
+}

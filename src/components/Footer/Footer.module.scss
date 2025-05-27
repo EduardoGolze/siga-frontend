@@ -1,0 +1,17 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  background-color: $dark-blue;
+  color: $white;
+  text-align: center;
+  padding: $padding-md;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+  p {
+    margin: $padding-sm 0;
+    font-size: 0.9rem;
+  }
+}

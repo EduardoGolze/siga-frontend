@@ -1,0 +1,26 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+body {
+  transition: all 0.3s ease;
+  
+  &.light {
+    background-color: $bg-light;
+    color: $text-light;
+  }
+
+  &.dark {
+    background-color: $bg-dark;
+    color: $text-dark;
+
+    .header, .footer, .nav {
+      background-color: $secondary-dark;
+    }
+  }
+
+  &.impress {
+    background-color: white;
+    color: black;
+    filter: grayscale(100%);
+  }
+}

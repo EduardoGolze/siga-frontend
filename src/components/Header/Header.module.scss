@@ -1,0 +1,28 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.header {
+  background-color: $dark-blue;
+  color: $white;
+  padding: $padding-md;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: $padding-md;
+
+    .logo {
+      height: $logo-size;
+      width: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+}
